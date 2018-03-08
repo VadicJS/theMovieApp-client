@@ -1,0 +1,63 @@
+<div class="container">
+  <h2> {{movie.title}} </h2>
+  <div class="row">
+    <div>
+      <img [src]='"https://image.tmdb.org/t/p/w500"+ movie.poster_path'>
+    </div>
+    <div class="description">
+      <ul>
+        <li>
+          <strong>Original title: </strong> {{movie.original_title}} </li>
+        <li>
+          <strong>Adult: </strong> {{movie.adult | questionableBoolean}} </li>
+        <li>
+          <strong>Release date: </strong> {{movie.release_date}} </li>
+        <li>
+          <strong>Vote average </strong> {{movie.vote_average}} </li>
+        <li>
+          <strong>Revenue: </strong> {{movie.revenue | currency}} </li>
+        <li>
+          <strong>Status: </strong> {{movie.status}} </li>
+        <li>
+          <strong>Homepage: </strong>
+          <a href={{movie.homepage}}>{{movie.homepage}} </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+<div id="overview">
+  <h4>Overview</h4>
+  {{movie.overview}}
+</div>
+
+<div class="row">
+  <div id="revs" class="col-8">
+    <button id="showReviews" class="btn btn-secondary" (click)="getReviews(movie.id)">Show reviews</button>
+    <table id="reviews" class="table-responsive" *ngIf="showReviews">
+      <tr *ngFor="let review of reviews">
+        <a class="revUrl" href={{review.url}}>
+          <td id="author">
+            <strong>Author: </strong>{{review.author}}</td>
+          <td>
+            <div id="rev">{{review.content}}</div>
+          </td>
+        </a>
+      </tr>
+    </table>
+  </div>
+  <div id="similarmovies" class="col-4">
+    <button id="showSimilar" class="btn btn-secondary" (click)="getSimilarMovies(movie.id)">Similar Movies</button>
+    <table id="similar" class="table-responsive" *ngIf="showSimilar">
+      <tr *ngFor="let smovie of smovie">
+        <td>
+          <img [src]='"https://image.tmdb.org/t/p/w500"+ smovie.poster_path'>
+        </td>
+        <td>
+          <h4>{{smovie.title}}</h4>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

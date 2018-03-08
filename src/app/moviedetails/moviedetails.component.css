@@ -1,0 +1,83 @@
+
+img{
+  height: 350px;
+}
+.container{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding: 30px;
+}
+
+h2{
+  margin: auto;
+  margin-bottom: 20px;
+  color: rgb(219, 186, 0);
+}
+
+a{
+  color: rgb(219, 186, 0);
+}
+
+.description{
+  padding-right: 20%;
+  white-space: nowrap;
+}
+
+ul{
+  list-style: none;
+}
+
+#overview{
+  padding: 30px;
+  padding-right: 20%;
+}
+
+.revUrl{
+  color: white;
+  text-decoration: none;
+}
+
+#rev{
+white-space: nowrap;
+height: 10vh;
+width: 400px;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+#author{
+  color: gold;
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+#showReviews{
+  width: 20em;
+  margin-bottom: 20px;
+}
+#showSimilar{
+  width: 20em;
+  margin-bottom: 20px;
+}
+
+#similar img{
+  height: 15vh;
+  padding: 10px;
+}
+
+#similar{
+  height: 40vh;
+  overflow: auto;
+}
+
+.row{
+  width: 90%;
+  padding: 10px;
+}
+
+
+
+

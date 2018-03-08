@@ -1,0 +1,54 @@
+img{
+  height: 180px;
+  padding-left:10px;
+}
+
+li{
+  font-size: 12px;
+}
+
+td:nth-child(2){
+  white-space: nowrap;
+  vertical-align: top;
+  padding-top: 30px;
+  padding-right: 10px;
+}
+
+td{
+  padding-top:10px;
+  padding-bottom: 10px;
+  text-align: left;
+  border-bottom: 1px solid gray;
+
+}
+
+td:nth-child(3) > p{
+  font-size: 0.8em;
+}
+td:nth-child(3){
+  padding-left: 5px;
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+table{
+  width: 70vw;
+  margin: auto;
+  color: white;
+}
+
+header{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+tr{
+  transition: 0.6s;
+  transition-delay: 0.1s;
+}
+
+tr:hover{
+  cursor: pointer;
+  background: rgb(39, 37, 37);
+}

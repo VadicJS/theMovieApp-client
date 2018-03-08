@@ -1,0 +1,24 @@
+
+<header><h2>Upcoming</h2></header>
+<table class="table-responsive">
+   <tr *ngFor="let movie of movies" [routerLink]="['movie/', movie.id]">
+    <td>
+      <img [src]='"https://image.tmdb.org/t/p/w500"+ movie.poster_path'> </td>
+    <td>
+      <div>
+
+        <ul>
+          <li><strong>Original language: </strong>{{movie.original_language}}</li>
+          <li><strong>Release date: </strong>{{movie.release_date}}</li>
+          <li><strong>Adult: </strong>{{movie.adult | questionableBoolean}}</li>
+          <li><strong>Popularity: </strong>{{movie.popularity}}</li>
+          <li> <strong>Vote average: </strong>{{movie.vote_average}}</li>
+        </ul>
+      </div>
+    </td>
+    <td>
+        <h3>{{movie.title}}</h3>
+     <p> {{movie.overview}}</p></td>
+
+  </tr>
+</table>

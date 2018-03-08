@@ -1,0 +1,43 @@
+.home{
+  width: 100%;
+  background: rgb(15, 15, 15);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  color: gray;
+}
+
+header{
+  margin-left: 30px;
+  margin-right: 130px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin-top: 15px;
+  border-bottom: 1px solid rgb(219, 186, 0);
+}
+
+h1{
+  margin-bottom: 0;
+  color: gray;
+}
+
+.buttons{
+  margin:auto;
+}
+
+span{
+  color: rgb(219, 186, 0);
+}
+
+#routeContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+a{
+  text-decoration: none;
+}

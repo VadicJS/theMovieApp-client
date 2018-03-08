@@ -1,0 +1,17 @@
+
+<div class="home">
+  <header>
+   <a href="index.html"><h1>The Movie <span>App</span></h1></a>
+Using themoviedb.org
+  </header>
+  <div class="buttons">
+    <button class="btn btn-secondary" [routerLink]="['top_rated']"> Top Rated </button>
+    <button class="btn btn-secondary" [routerLink]="['popular']"> Popular </button>
+    <button class="btn btn-secondary" [routerLink]="['upcoming']"> Upcoming </button>
+    <button class="btn btn-secondary" [routerLink]="['now_playing']"> Now Playing</button>
+  </div>
+
+  <div id="routeContainer">
+    <router-outlet #myOutlet="outlet"></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+tr{
+  transition: 0.6s;
+  transition-delay: 0.1s;
+}
+
+tr:hover{
+  cursor: pointer;
+  background: rgb(39, 37, 37);
+}
+
